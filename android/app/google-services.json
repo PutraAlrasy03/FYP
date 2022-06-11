@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337864064635",
+    "project_id": "fypbeta3",
+    "storage_bucket": "fypbeta3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337864064635:android:0257642e93700df292ecde",
+        "android_client_info": {
+          "package_name": "com.example.newblogapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337864064635-o8ft0imnof55os4pu6vnrkgep0ihee5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr-GU2IYy9jUgu73j0zDGJp8vEDfIFh-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337864064635-o8ft0imnof55os4pu6vnrkgep0ihee5d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
