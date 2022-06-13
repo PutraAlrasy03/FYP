@@ -14,26 +14,11 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final dbRef = FirebaseDatabase.instance.reference().child('Posts');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.blueAccent,
-        appBar: AppBar(
-          automaticallyImplyLeading: false,
-          title: Text('New Post'),
-          centerTitle: true,
-          actions: [
-            InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AddPostScreen()));
-                },
-                child: Icon(Icons.add)),
-            SizedBox(
-              width: 20,
-            )
-          ],
-        ),
         body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
             child: Column(
@@ -112,6 +97,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                   )));
                         }),
                   )
-                ])));
+                ])),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => AddPostScreen()));
+          },
+          child: const Icon(Icons.edit),
+        ));
   }
 }
