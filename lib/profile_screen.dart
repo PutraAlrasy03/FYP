@@ -16,10 +16,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primarySwatch: Colors.red, scaffoldBackgroundColor: Colors.blue),
       home: const MyHomePage(title: 'Youth Higher Learning'),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
