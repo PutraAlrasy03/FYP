@@ -36,6 +36,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var _page = 0;
   final pages = [HomeScreen(), Mail(), Search()];
+  PageController _pageController = PageController(initialPage: 0);
+  int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,16 +45,30 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         centerTitle: true,
       ),
+      body: PageView(
+        controller: _pageController,
+        onPageChanged: (newIndex) {
+          setState(() {
+            _currentIndex = newIndex;
+          });
+        },
+        children: [
+          HomeScreen(),
+          Mail(),
+          Search(),
+        ],
+      ),
       bottomNavigationBar: CurvedNavigationBar(
-        index: 0,
+        index: _currentIndex,
         color: Colors.red,
         backgroundColor: Colors.white,
         buttonBackgroundColor: Colors.red,
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 400),
-        onTap: (index) {
+        onTap: (newIndex) {
           setState(() {
-            _page = index;
+            _pageController.animateToPage(newIndex,
+                duration: Duration(milliseconds: 500), curve: Curves.ease);
           });
         },
         items: [
@@ -61,7 +77,6 @@ class _MyHomePageState extends State<MyHomePage> {
           Icon(Icons.search, color: Colors.black),
         ],
       ),
-      body: pages[_page],
     );
   }
 }
