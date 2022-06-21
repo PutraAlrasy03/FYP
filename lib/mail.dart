@@ -40,36 +40,12 @@ class _MailState extends State<Mail> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          Container(
-            // Here the height of the container is 45% of our total height
-            height: size.height * .45,
-            decoration: BoxDecoration(
-              color: Color(0xFFF5CEB8),
-              image: DecorationImage(
-                alignment: Alignment.centerLeft,
-                image: AssetImage("assets/images/undraw_pilates_gpdb.png"),
-              ),
-            ),
-          ),
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Align(
-                    alignment: Alignment.topRight,
-                    child: Container(
-                      alignment: Alignment.center,
-                      height: 52,
-                      width: 52,
-                      decoration: BoxDecoration(
-                        color: Color(0xFFF2BEA1),
-                        shape: BoxShape.circle,
-                      ),
-                      child: SvgPicture.asset("assets/icons/menu.svg"),
-                    ),
-                  ),
                   Text(
                     "Welcome Back",
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -77,7 +53,9 @@ class _MailState extends State<Mail> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("${loggedInUser.firstName}${loggedInUser.secondName}",
+                  Text(
+                      "${loggedInUser.firstName} "
+                      "${loggedInUser.secondName}",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black54,
@@ -105,24 +83,24 @@ class _MailState extends State<Mail> {
                       children: <Widget>[
                         CategoryCard(
                           title: "Scholarship Bank Negara",
-                          svgSrc: "assets/icons/bank.svg",
+                          svgSrc: "assets/icons/Banknegara.svg",
                           press: () => launch(
                               'https://www.bnm.gov.my/careers/scholarships'),
                         ),
                         CategoryCard(
                           title: "Scholarship JPA",
-                          svgSrc: "assets/icons/question.svg",
+                          svgSrc: "assets/icons/jpa.svg",
                           press: () => launch(
                               'https://www.index.my/permohonan-biasiswa-jpa-program-ijazah-dalam-negara-pidn/'),
                         ),
                         CategoryCard(
                           title: "PTPTN",
-                          svgSrc: "assets/icons/question.svg",
+                          svgSrc: "assets/icons/pt.svg",
                           press: () => launch('https://www.ptptn.gov.my/'),
                         ),
                         CategoryCard(
                           title: " Shell Scholarship",
-                          svgSrc: "assets/icons/shell.svg",
+                          svgSrc: "assets/icons/shell2.svg",
                           press: () => launch(
                               'https://www.shell.com.my/careers/students-and-graduates/scholarships.html'),
                         ),

@@ -7,11 +7,19 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
+      width: 200,
+      margin: EdgeInsets.all(5),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+        topRight: Radius.circular(40),
+      )),
       child: RaisedButton(
-        color: Colors.blueAccent,
+        color: Colors.red,
         textColor: Colors.white,
-        child: Text(answerText),
+        child: Text(answerText,
+            style: TextStyle(
+              fontSize: 20,
+            )),
         onPressed: selectHandler,
       ),
     );

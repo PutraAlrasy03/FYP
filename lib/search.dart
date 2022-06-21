@@ -56,6 +56,7 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     // implemented build
     return MaterialApp(
+      theme: new ThemeData(scaffoldBackgroundColor: Colors.blue),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: _questionIndex < _questions.length

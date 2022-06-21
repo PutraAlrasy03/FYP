@@ -21,15 +21,18 @@ class Result extends StatelessWidget {
     return Center(
       child: Column(
         children: <Widget>[
+          SizedBox(height: 100),
           Text(
             resultPhrase,
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
+          SizedBox(height: 50),
           FlatButton(
             onPressed: resetHandler,
-            child: Text('Restart'),
-            textColor: Colors.blue,
+            child: Text('Lets start again, shall we?',
+                style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
+            textColor: Colors.red,
           )
         ],
       ),
