@@ -52,13 +52,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     .size
                                                     .height *
                                                 .25,
-                                            width:
-                                                MediaQuery.of(context)
-                                                        .size
-                                                        .width *
-                                                    1,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                1,
                                             placeholder:
-                                                'assets/images/app_logo.png',
+                                                'assets/images/load.png',
                                             image: snapshot
                                                 .child('pImage')
                                                 .value
