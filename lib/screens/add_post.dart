@@ -91,7 +91,9 @@ class _AddPostScreenState extends State<AddPostScreen> {
         inAsyncCall: showSpinner,
         child: Scaffold(
             appBar: AppBar(
-              title: Text('Upload Blogs'),
+              title: Text(
+                'Upload Blogs',
+              ),
               centerTitle: true,
             ),
             body: SingleChildScrollView(
@@ -117,13 +119,13 @@ class _AddPostScreenState extends State<AddPostScreen> {
                                 )
                               : Container(
                                   decoration: BoxDecoration(
-                                      color: Colors.grey.shade400,
+                                      color: Colors.white,
                                       borderRadius: BorderRadius.circular(10)),
                                   width: 100,
                                   height: 100,
                                   child: Icon(
                                     Icons.camera_alt,
-                                    color: Colors.blue,
+                                    color: Color.fromARGB(255, 22, 36, 82),
                                   ),
                                 ),
                         ),
@@ -145,10 +147,10 @@ class _AddPostScreenState extends State<AddPostScreen> {
                               hintText: 'Enter post Title',
                               border: OutlineInputBorder(),
                               hintStyle: TextStyle(
-                                  color: Colors.grey,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.normal),
                               labelStyle: TextStyle(
-                                  color: Colors.grey,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -165,10 +167,10 @@ class _AddPostScreenState extends State<AddPostScreen> {
                               hintText: 'Enter post description',
                               border: OutlineInputBorder(),
                               hintStyle: TextStyle(
-                                  color: Colors.grey,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.normal),
                               labelStyle: TextStyle(
-                                  color: Colors.grey,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.normal),
                             ),
                           ),
@@ -180,8 +182,8 @@ class _AddPostScreenState extends State<AddPostScreen> {
                     ),
                     RaisedButton(
                         child: Text("Upload"),
-                        textColor: Colors.white,
-                        color: Colors.red,
+                        textColor: Color.fromARGB(255, 22, 36, 82),
+                        color: Color.fromARGB(255, 247, 147, 180),
                         onPressed: () async {
                           setState(() {
                             showSpinner = true;
@@ -236,8 +238,8 @@ class _AddPostScreenState extends State<AddPostScreen> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.SNACKBAR,
         timeInSecForIosWeb: 1,
-        backgroundColor: Colors.grey.shade400,
-        textColor: Colors.red,
+        backgroundColor: Color.fromARGB(255, 247, 147, 180),
+        textColor: Color.fromARGB(255, 22, 36, 82),
         fontSize: 16.0);
   }
 }

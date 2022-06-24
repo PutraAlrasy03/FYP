@@ -14,8 +14,8 @@ class Answer extends StatelessWidget {
         topRight: Radius.circular(40),
       )),
       child: RaisedButton(
-        color: Colors.red,
-        textColor: Colors.white,
+        color: Color.fromARGB(255, 247, 147, 180),
+        textColor: Color.fromARGB(255, 22, 36, 82),
         child: Text(answerText,
             style: TextStyle(
               fontSize: 20,

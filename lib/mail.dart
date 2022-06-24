@@ -48,7 +48,10 @@ class _MailState extends State<Mail> {
                 children: <Widget>[
                   Text(
                     "Welcome Back",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
                   ),
                   SizedBox(
                     height: 10,
@@ -58,12 +61,12 @@ class _MailState extends State<Mail> {
                       "${loggedInUser.secondName}",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontWeight: FontWeight.w500)),
                   Text("${loggedInUser.email}",
                       style: TextStyle(
                           fontSize: 20,
-                          color: Colors.black54,
+                          color: Colors.white,
                           fontWeight: FontWeight.w500)),
                   SizedBox(
                     height: 15,

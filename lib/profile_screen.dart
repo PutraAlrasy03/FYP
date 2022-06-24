@@ -18,8 +18,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          primarySwatch: Colors.red, scaffoldBackgroundColor: Colors.blue),
-      home: const MyHomePage(title: 'Youth Higher Learning'),
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+              primary: Color.fromARGB(255, 247, 147, 180),
+              secondary: Color.fromARGB(255, 247, 147, 180),
+              tertiary: Color.fromARGB(255, 22, 36, 82)),
+          scaffoldBackgroundColor: Color.fromARGB(255, 22, 36, 82)),
+      home: const MyHomePage(
+        title: 'Youth Higher Learning',
+      ),
     );
   }
 }
@@ -60,21 +66,21 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         index: _currentIndex,
-        color: Colors.red,
-        backgroundColor: Colors.blue,
-        buttonBackgroundColor: Colors.red,
+        color: Color.fromARGB(255, 247, 147, 180),
+        backgroundColor: Color.fromARGB(255, 22, 36, 82),
+        buttonBackgroundColor: Color.fromARGB(255, 247, 147, 180),
         animationCurve: Curves.easeInOut,
         animationDuration: Duration(milliseconds: 400),
         onTap: (newIndex) {
           setState(() {
             _pageController.animateToPage(newIndex,
-                duration: Duration(milliseconds: 500), curve: Curves.ease);
+                duration: Duration(milliseconds: 300), curve: Curves.ease);
           });
         },
         items: [
-          Icon(Icons.home, color: Colors.black),
-          Icon(Icons.mail, color: Colors.black),
-          Icon(Icons.search, color: Colors.black),
+          Icon(Icons.home, color: Color.fromARGB(255, 22, 36, 82)),
+          Icon(Icons.mail, color: Color.fromARGB(255, 22, 36, 82)),
+          Icon(Icons.search, color: Color.fromARGB(255, 22, 36, 82)),
         ],
       ),
     );

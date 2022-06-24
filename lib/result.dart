@@ -18,13 +18,15 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var colors;
     return Center(
       child: Column(
         children: <Widget>[
           SizedBox(height: 100),
           Text(
             resultPhrase,
-            style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
             textAlign: TextAlign.center,
           ),
           SizedBox(height: 50),
@@ -32,7 +34,7 @@ class Result extends StatelessWidget {
             onPressed: resetHandler,
             child: Text('Lets start again, shall we?',
                 style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
-            textColor: Colors.red,
+            textColor: Color.fromARGB(255, 247, 147, 180),
           )
         ],
       ),
