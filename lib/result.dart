@@ -6,12 +6,16 @@ class Result extends StatelessWidget {
   Result(this.resultScore, this.resetHandler);
   String get resultPhrase {
     String resultText;
-    if (resultScore >= 15) {
-      resultText = 'You are should try University of Malaya!';
-    } else if (resultScore >= 10) {
-      resultText = 'You are should try Universiti Putra Malaysia!';
+    if (resultScore >= 201) {
+      resultText = 'Pra-Diploma Sains';
+    } else if (resultScore >= 151) {
+      resultText = 'Pra-Diploma Perdagangan';
+    } else if (resultScore >= 101) {
+      resultText = 'Pra-Diploma Agroteknologi';
+    } else if (resultScore >= 51) {
+      resultText = 'Pra-Diploma Pengajian Islam';
     } else {
-      resultText = 'You are should try Universiti Teknologi Mara!';
+      resultText = 'Pra-Diploma Sains (Aliran STEM C & Sastera) ';
     }
     return resultText;
   }

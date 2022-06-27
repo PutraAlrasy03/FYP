@@ -8,7 +8,7 @@ class Question extends StatelessWidget {
     return Container(
       alignment: FractionalOffset.center,
       width: double.infinity,
-      margin: EdgeInsets.all(60),
+      margin: EdgeInsets.all(40),
       child: Text(
         questionText,
         style: TextStyle(
