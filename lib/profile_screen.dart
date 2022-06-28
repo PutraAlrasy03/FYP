@@ -33,7 +33,7 @@ class _ProfileScreenState extends State<ProfileScreen>
 
   @override
   void dispose() {
-    _controller!.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage>
 
   @override
   void dispose() {
-    _controller!.dispose();
+    _controller.dispose();
     super.dispose();
   }
 
