@@ -46,14 +46,7 @@ class _MailState extends State<Mail> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(
-                    "Welcome Back",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                  SearchBar(),
+                  SizedBox(height: 10),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,
@@ -75,14 +68,38 @@ class _MailState extends State<Mail> {
                         ),
                         CategoryCard(
                           title: "PTPTN",
-                          svgSrc: "assets/icons/pt.svg",
+                          svgSrc: "assets/icons/PTPTN.svg",
                           press: () => launch('https://www.ptptn.gov.my/'),
                         ),
                         CategoryCard(
                           title: " Shell Scholarship",
-                          svgSrc: "assets/icons/shell2.svg",
+                          svgSrc: "assets/icons/Shell1.svg",
                           press: () => launch(
                               'https://www.shell.com.my/careers/students-and-graduates/scholarships.html'),
+                        ),
+                        CategoryCard(
+                          title: "Biasiswa Yayasan Khazanah Nasional",
+                          svgSrc: "assets/icons/yk3.svg",
+                          press: () =>
+                              launch('https://www.yayasankhazanah.com.my'),
+                        ),
+                        CategoryCard(
+                          title: "Biasiswa Tunku Abdul Rahman",
+                          svgSrc: "assets/icons/tun3.svg",
+                          press: () => launch(
+                              'https://www.yayasantar.org.my/scholarships/biasiswa-tunku-abdul-rahman/'),
+                        ),
+                        CategoryCard(
+                          title: "Karangkraf Scholarship",
+                          svgSrc: "assets/icons/KT.svg",
+                          press: () => launch(
+                              'https://www.karangkraf.com/biasiswa-karangkraf/'),
+                        ),
+                        CategoryCard(
+                          title: " Yayasan Bank Rakyat",
+                          svgSrc: "assets/icons/br.svg",
+                          press: () => launch(
+                              'https://application.yayasanbankrakyat.com.my/'),
                         ),
                       ],
                     ),

@@ -149,8 +149,8 @@ class _MyHomePageState extends State<MyHomePage>
                 },
                 children: [
                   HomeScreen(),
-                  Mail(),
                   Search(),
+                  Mail(),
                 ],
               ),
               bottomNavigationBar: CurvedNavigationBar(
@@ -169,8 +169,8 @@ class _MyHomePageState extends State<MyHomePage>
                 },
                 items: [
                   Icon(Icons.home, color: Color.fromARGB(255, 22, 36, 82)),
-                  Icon(Icons.mail, color: Color.fromARGB(255, 22, 36, 82)),
                   Icon(Icons.search, color: Color.fromARGB(255, 22, 36, 82)),
+                  Icon(Icons.mail, color: Color.fromARGB(255, 22, 36, 82)),
                 ],
               ),
             )));

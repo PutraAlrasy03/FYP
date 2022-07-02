@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
+import 'package:lottie/lottie.dart';
 import 'package:newblogapp/main.dart';
 
 class OnBoarding extends StatefulWidget {
@@ -9,7 +10,18 @@ class OnBoarding extends StatefulWidget {
   _OnBoardingState createState() => _OnBoardingState();
 }
 
-class _OnBoardingState extends State<OnBoarding> {
+class _OnBoardingState extends State<OnBoarding>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final pages = [
@@ -19,7 +31,11 @@ class _OnBoardingState extends State<OnBoarding> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset('assets/images/marketing1.JPG'),
+            Lottie.asset('assets/images/study.json',
+                repeat: true, controller: _controller, onLoaded: (composition) {
+              _controller.duration = composition.duration;
+              _controller.repeat();
+            }),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
@@ -55,7 +71,11 @@ class _OnBoardingState extends State<OnBoarding> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset('assets/images/marketing2.png'),
+            Lottie.asset('assets/images/shcolar.json',
+                repeat: true, controller: _controller, onLoaded: (composition) {
+              _controller.duration = composition.duration;
+              _controller.repeat();
+            }),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
@@ -91,7 +111,11 @@ class _OnBoardingState extends State<OnBoarding> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Image.asset('assets/images/marketing3.png'),
+            Lottie.asset('assets/images/generate.json',
+                repeat: true, controller: _controller, onLoaded: (composition) {
+              _controller.duration = composition.duration;
+              _controller.repeat();
+            }),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(

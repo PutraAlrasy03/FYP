@@ -12,6 +12,12 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   final _questions = const [
     {
+      'questionText': 'Let Start The Questionare !',
+      'answers': [
+        {'text': 'OK', 'score': 0},
+      ],
+    },
+    {
       'questionText':
           'Im motivated to study at University because I would like:',
       'answers': [

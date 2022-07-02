@@ -14,6 +14,8 @@ class Result extends StatelessWidget {
       resultText = 'Pra-Diploma Agroteknologi';
     } else if (resultScore >= 51) {
       resultText = 'Pra-Diploma Pengajian Islam';
+    } else if (resultScore <= 50) {
+      resultText = 'Pra-Diploma Sains (Aliran STEM C & Sastera) ';
     } else {
       resultText = 'Pra-Diploma Sains (Aliran STEM C & Sastera) ';
     }
