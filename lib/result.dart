@@ -6,7 +6,17 @@ class Result extends StatelessWidget {
   Result(this.resultScore, this.resetHandler);
   String get resultPhrase {
     String resultText;
-    if (resultScore >= 201) {
+    if (resultScore >= 1201) {
+      resultText = 'Diploma Sains' + "\r\n" + 'Diploma Biologi';
+    } else if (resultScore >= 1151) {
+      resultText = 'Diploma Perdagangan';
+    } else if (resultScore >= 1101) {
+      resultText = 'Diploma Agroteknologi';
+    } else if (resultScore >= 1051) {
+      resultText = 'Diploma Pengajian Islam';
+    } else if (resultScore >= 1049) {
+      resultText = 'Diploma Sains (Aliran STEM C & Sastera) ';
+    } else if (resultScore >= 201 && resultScore <= 250) {
       resultText = 'Pra-Diploma Sains';
     } else if (resultScore >= 151) {
       resultText = 'Pra-Diploma Perdagangan';
