@@ -12,7 +12,7 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   final _questions = const [
     {
-      'questionText': 'Let Start The Questionare !',
+      'questionText': 'Let Start The Questionnaire !',
       'answers': [
         {'text': 'OK', 'score': 0},
       ],
@@ -20,7 +20,7 @@ class _SearchState extends State<Search> {
     {
       'questionText': 'I apply for',
       'answers': [
-        {'text': 'Asasi', 'score': 0},
+        {'text': 'Pra-Diploma', 'score': 0},
         {'text': 'Diploma', 'score': 1000},
       ],
     },
@@ -95,7 +95,7 @@ class _SearchState extends State<Search> {
           'score': 5
         },
         {'text': 'Connecting with a wide range of individuals.', 'score': 10},
-        {'text': 'Be entrepreneur.r wih mutli business', 'score': 20},
+        {'text': 'Be entrepreneur wih mutli business', 'score': 20},
       ],
     },
     {

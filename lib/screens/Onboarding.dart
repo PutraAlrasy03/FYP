@@ -32,7 +32,9 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/study.json',
-                repeat: true, controller: _controller, onLoaded: (composition) {
+                frameRate: FrameRate.max,
+                repeat: true,
+                controller: _controller, onLoaded: (composition) {
               _controller.duration = composition.duration;
               _controller.repeat();
             }),
@@ -72,7 +74,9 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/shcolar.json',
-                repeat: true, controller: _controller, onLoaded: (composition) {
+                frameRate: FrameRate.max,
+                repeat: true,
+                controller: _controller, onLoaded: (composition) {
               _controller.duration = composition.duration;
               _controller.repeat();
             }),
@@ -112,7 +116,9 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/generate.json',
-                repeat: true, controller: _controller, onLoaded: (composition) {
+                frameRate: FrameRate.max,
+                repeat: true,
+                controller: _controller, onLoaded: (composition) {
               _controller.duration = composition.duration;
               _controller.repeat();
             }),
