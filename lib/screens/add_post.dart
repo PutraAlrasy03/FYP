@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 import 'package:firebase_core/firebase_core.dart';
+import 'package:lottie/lottie.dart';
 import 'package:modal_progress_hud_alt/modal_progress_hud_alt.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:newblogapp/profile_screen.dart';
@@ -222,7 +223,15 @@ class _AddPostScreenState extends State<AddPostScreen> {
                         toastMessage(e.toString());
                       }
                       goToHomePage();
-                    })
+                    }),
+                SizedBox(
+                  height: 30,
+                ),
+                Lottie.network(
+                    'https://assets4.lottiefiles.com/private_files/lf30_t2ErKq.json',
+                    frameRate: FrameRate.max,
+                    repeat: true,
+                    height: 150),
               ],
             ),
           ),

@@ -68,36 +68,36 @@ class _MailState extends State<Mail> {
                         ),
                         CategoryCard(
                           title: "PTPTN",
-                          svgSrc: "assets/icons/PTPTN.svg",
+                          svgSrc: "assets/icons/PTPTN1.svg",
                           press: () => launch('https://www.ptptn.gov.my/'),
                         ),
                         CategoryCard(
                           title: " Shell Scholarship",
-                          svgSrc: "assets/icons/Shell1.svg",
+                          svgSrc: "assets/icons/shell3.svg",
                           press: () => launch(
                               'https://www.shell.com.my/careers/students-and-graduates/scholarships.html'),
                         ),
                         CategoryCard(
-                          title: "Biasiswa Yayasan Khazanah Nasional",
-                          svgSrc: "assets/icons/yk3.svg",
+                          title: "Yayasan Khazanah",
+                          svgSrc: "assets/icons/yk4.svg",
                           press: () =>
                               launch('https://www.yayasankhazanah.com.my'),
                         ),
                         CategoryCard(
                           title: "Biasiswa Tunku Abdul Rahman",
-                          svgSrc: "assets/icons/tun3.svg",
+                          svgSrc: "assets/icons/tun2.svg",
                           press: () => launch(
                               'https://www.yayasantar.org.my/scholarships/biasiswa-tunku-abdul-rahman/'),
                         ),
                         CategoryCard(
                           title: "Karangkraf Scholarship",
-                          svgSrc: "assets/icons/KT.svg",
+                          svgSrc: "assets/icons/kt2.svg",
                           press: () => launch(
                               'https://www.karangkraf.com/biasiswa-karangkraf/'),
                         ),
                         CategoryCard(
                           title: " Yayasan Bank Rakyat",
-                          svgSrc: "assets/icons/br.svg",
+                          svgSrc: "assets/icons/br1.svg",
                           press: () => launch(
                               'https://application.yayasanbankrakyat.com.my/'),
                         ),

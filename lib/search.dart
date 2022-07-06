@@ -18,7 +18,7 @@ class _SearchState extends State<Search> {
       ],
     },
     {
-      'questionText': 'I apply for',
+      'questionText': 'After Secondary School i like to continue study To?',
       'answers': [
         {'text': 'Pra-Diploma', 'score': 0},
         {'text': 'Diploma', 'score': 1000},

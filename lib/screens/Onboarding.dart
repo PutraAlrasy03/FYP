@@ -32,6 +32,8 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/study.json',
+                height: 300,
+                width: 300,
                 frameRate: FrameRate.max,
                 repeat: true,
                 controller: _controller, onLoaded: (composition) {
@@ -74,6 +76,8 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/shcolar.json',
+                height: 300,
+                width: 300,
                 frameRate: FrameRate.max,
                 repeat: true,
                 controller: _controller, onLoaded: (composition) {
@@ -116,6 +120,8 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Lottie.asset('assets/images/generate.json',
+                height: 300,
+                width: 300,
                 frameRate: FrameRate.max,
                 repeat: true,
                 controller: _controller, onLoaded: (composition) {

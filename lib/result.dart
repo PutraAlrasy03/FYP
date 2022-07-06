@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Result extends StatelessWidget {
@@ -55,26 +56,32 @@ class Result extends StatelessWidget {
     return Center(
       child: Column(
         children: <Widget>[
-          SizedBox(height: 100),
+          SizedBox(height: 50),
           Text(
             resultPhrase,
             style: TextStyle(
-                fontSize: 36, fontWeight: FontWeight.bold, color: Colors.white),
+                fontSize: 27, fontWeight: FontWeight.bold, color: Colors.white),
             textAlign: TextAlign.center,
           ),
-          SizedBox(height: 50),
-          FlatButton(
-            onPressed: resetHandler,
-            child: Text('Lets start again, shall we?',
-                style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic)),
-            textColor: Color.fromARGB(255, 247, 147, 180),
-          ),
-          SizedBox(height: 50),
+          SizedBox(height: 20),
+          Lottie.network(
+              'https://assets7.lottiefiles.com/packages/lf20_fgmesll3.json',
+              frameRate: FrameRate.max,
+              repeat: true,
+              height: 150),
+          SizedBox(height: 25),
           RaisedButton(
               child: Text("Apply Now !"),
               textColor: Color.fromARGB(255, 22, 36, 82),
               color: Color.fromARGB(255, 247, 147, 180),
-              onPressed: () => launch('https://online.uitm.edu.my/'))
+              onPressed: () => launch('https://online.uitm.edu.my/')),
+          SizedBox(height: 25),
+          FlatButton(
+            onPressed: resetHandler,
+            child: Text('Lets start again, shall we?',
+                style: TextStyle(fontSize: 15, fontStyle: FontStyle.italic)),
+            textColor: Color.fromARGB(255, 247, 147, 180),
+          ),
         ],
       ),
     );
