@@ -43,10 +43,10 @@ class _ProfileScreenState extends State<ProfileScreen>
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           colorScheme: ColorScheme.fromSwatch().copyWith(
-              primary: Color.fromARGB(255, 247, 147, 180),
-              secondary: Color.fromARGB(255, 247, 147, 180),
-              tertiary: Color.fromARGB(255, 22, 36, 82)),
-          scaffoldBackgroundColor: Color.fromARGB(255, 22, 36, 82)),
+              primary: Color.fromARGB(255, 241, 69, 126),
+              secondary: Color.fromARGB(255, 241, 69, 126),
+              tertiary: Color.fromARGB(255, 35, 57, 129)),
+          scaffoldBackgroundColor: Color.fromARGB(255, 32, 55, 129)),
       home: const MyHomePage(
         title: 'Youth Higher Learning',
       ),
@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage>
   Widget build(BuildContext context) {
     return Material(
         child: FancyDrawerWrapper(
-            backgroundColor: Color.fromARGB(255, 247, 147, 180),
+            backgroundColor: Color.fromARGB(255, 241, 69, 126),
             controller: _controller,
             drawerItems: <Widget>[
               Text(
@@ -110,12 +110,12 @@ class _MyHomePageState extends State<MyHomePage>
                   "${loggedInUser.secondName}",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Color.fromARGB(255, 22, 36, 82),
+                      color: Color.fromARGB(255, 32, 55, 129),
                       fontWeight: FontWeight.w500)),
               Text("${loggedInUser.email}",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Color.fromARGB(255, 22, 36, 82),
+                      color: Color.fromARGB(255, 32, 55, 129),
                       fontWeight: FontWeight.w500)),
               SizedBox(
                 height: 15,
@@ -155,9 +155,9 @@ class _MyHomePageState extends State<MyHomePage>
               ),
               bottomNavigationBar: CurvedNavigationBar(
                 index: _currentIndex,
-                color: Color.fromARGB(255, 247, 147, 180),
-                backgroundColor: Color.fromARGB(255, 22, 36, 82),
-                buttonBackgroundColor: Color.fromARGB(255, 247, 147, 180),
+                color: Color.fromARGB(255, 241, 69, 126),
+                backgroundColor: Color.fromARGB(255, 32, 55, 129),
+                buttonBackgroundColor: Color.fromARGB(255, 241, 69, 126),
                 animationCurve: Curves.easeInOut,
                 animationDuration: Duration(milliseconds: 400),
                 onTap: (newIndex) {
@@ -168,9 +168,9 @@ class _MyHomePageState extends State<MyHomePage>
                   });
                 },
                 items: [
-                  Icon(Icons.home, color: Color.fromARGB(255, 22, 36, 82)),
-                  Icon(Icons.search, color: Color.fromARGB(255, 22, 36, 82)),
-                  Icon(Icons.mail, color: Color.fromARGB(255, 22, 36, 82)),
+                  Icon(Icons.home, color: Colors.white),
+                  Icon(Icons.search, color: Colors.white),
+                  Icon(Icons.mail, color: Colors.white),
                 ],
               ),
             )));

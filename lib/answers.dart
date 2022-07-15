@@ -13,8 +13,8 @@ class Answer extends StatelessWidget {
         borderRadius: BorderRadius.circular(60),
       ),
       child: RaisedButton(
-        color: Color.fromARGB(255, 247, 147, 180),
-        textColor: Color.fromARGB(255, 22, 36, 82),
+        color: Color.fromARGB(255, 241, 69, 126),
+        textColor: Colors.white,
         child: Text(answerText,
             style: TextStyle(
               fontSize: 15,

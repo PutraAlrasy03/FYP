@@ -72,15 +72,15 @@ class Result extends StatelessWidget {
           SizedBox(height: 25),
           RaisedButton(
               child: Text("Apply Now !"),
-              textColor: Color.fromARGB(255, 22, 36, 82),
-              color: Color.fromARGB(255, 247, 147, 180),
+              textColor: Color.fromARGB(255, 32, 55, 129),
+              color: Color.fromARGB(255, 241, 69, 126),
               onPressed: () => launch('https://online.uitm.edu.my/')),
           SizedBox(height: 25),
           FlatButton(
             onPressed: resetHandler,
             child: Text('Lets start again, shall we?',
                 style: TextStyle(fontSize: 15, fontStyle: FontStyle.italic)),
-            textColor: Color.fromARGB(255, 247, 147, 180),
+            textColor: Color.fromARGB(255, 241, 69, 126),
           ),
         ],
       ),

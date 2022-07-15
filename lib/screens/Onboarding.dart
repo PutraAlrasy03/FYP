@@ -57,7 +57,7 @@ class _OnBoardingState extends State<OnBoarding>
                     height: 10,
                   ),
                   Text(
-                    "This app will show best news about study in higher education",
+                    "Boring with existing blog app? Use our application that also have blog. This app will show best news about study in higher education.",
                     style: TextStyle(color: Colors.white),
                   ),
                   SizedBox(
@@ -101,7 +101,7 @@ class _OnBoardingState extends State<OnBoarding>
                     height: 10,
                   ),
                   Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                    "Having problem with financial? Worry about university fee? Dont worry this application will provide the scholarship",
                     style: TextStyle(color: Colors.white),
                   ),
                   SizedBox(
@@ -145,7 +145,7 @@ class _OnBoardingState extends State<OnBoarding>
                     height: 10,
                   ),
                   Text(
-                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+                    "Want to continue study but dont know what course to take? Try this application, answer 10 questionnare and see the best course suit for you!",
                     style: TextStyle(color: Colors.white),
                   ),
                   SizedBox(

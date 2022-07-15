@@ -210,7 +210,7 @@ class _SearchState extends State<Search> {
     // implemented build
     return MaterialApp(
       theme: new ThemeData(
-          scaffoldBackgroundColor: Color.fromARGB(255, 22, 36, 82)),
+          scaffoldBackgroundColor: Color.fromARGB(255, 32, 55, 129)),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
           body: _questionIndex < _questions.length
