@@ -95,7 +95,7 @@ class _SearchState extends State<Search> {
           'score': 5
         },
         {'text': 'Connecting with a wide range of individuals.', 'score': 10},
-        {'text': 'Be entrepreneur wih mutli business', 'score': 20},
+        {'text': 'Be entrepreneur with many business', 'score': 20},
       ],
     },
     {

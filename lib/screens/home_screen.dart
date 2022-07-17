@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:newblogapp/item.dart';
 import 'package:newblogapp/screens/add_post.dart';
 import 'package:modal_progress_hud_alt/modal_progress_hud_alt.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -17,6 +18,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    List<Item> searchList = ITEM_LIST
+        .where((element) =>
+            element.name.toLowerCase().contains(text.toLowerCase()))
+        .toList();
     return Scaffold(
         backgroundColor: Color.fromARGB(255, 32, 55, 129),
         body: Padding(
@@ -91,7 +96,37 @@ class _HomeScreenState extends State<HomeScreen> {
                                               fontSize: 15,
                                               fontWeight: FontWeight.normal),
                                         ),
-                                      )
+                                      ),
+                                      searchList[index].favorite == 0
+                                          ? Padding(
+                                              padding:
+                                                  const EdgeInsets.all(0.0),
+                                              child: IconButton(
+                                                icon:
+                                                    Icon(Icons.favorite_border),
+                                                color: Colors.red,
+                                                onPressed: () {
+                                                  setState(() {
+                                                    searchList[index]
+                                                        .favorite++;
+                                                  });
+                                                },
+                                              ),
+                                            )
+                                          : Row(
+                                              children: <Widget>[
+                                                IconButton(
+                                                  icon: Icon(Icons.favorite,
+                                                      color: Colors.red),
+                                                  onPressed: () {
+                                                    setState(() {
+                                                      searchList[index]
+                                                          .favorite--;
+                                                    });
+                                                  },
+                                                ),
+                                              ],
+                                            ),
                                     ],
                                   )));
                         }),
