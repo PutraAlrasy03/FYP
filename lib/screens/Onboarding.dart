@@ -31,15 +31,11 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Lottie.asset('assets/images/study.json',
-                height: 300,
-                width: 300,
-                frameRate: FrameRate.max,
-                repeat: true,
-                controller: _controller, onLoaded: (composition) {
-              _controller.duration = composition.duration;
-              _controller.repeat();
-            }),
+            Image.asset(
+              'assets/images/blogging.png',
+              height: 300,
+              width: 300,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
@@ -75,15 +71,11 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Lottie.asset('assets/images/shcolar.json',
-                height: 300,
-                width: 300,
-                frameRate: FrameRate.max,
-                repeat: true,
-                controller: _controller, onLoaded: (composition) {
-              _controller.duration = composition.duration;
-              _controller.repeat();
-            }),
+            Image.asset(
+              'assets/images/scholarship.png',
+              height: 300,
+              width: 300,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
@@ -119,15 +111,11 @@ class _OnBoardingState extends State<OnBoarding>
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Lottie.asset('assets/images/generate.json',
-                height: 300,
-                width: 300,
-                frameRate: FrameRate.max,
-                repeat: true,
-                controller: _controller, onLoaded: (composition) {
-              _controller.duration = composition.duration;
-              _controller.repeat();
-            }),
+            Image.asset(
+              'assets/images/elearning.png',
+              height: 300,
+              width: 300,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(

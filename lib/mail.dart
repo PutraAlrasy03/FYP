@@ -8,6 +8,7 @@ import 'package:newblogapp/widgets/category_card.dart';
 import 'package:newblogapp/widgets/search_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class Mail extends StatefulWidget {
   const Mail({Key? key}) : super(key: key);
@@ -19,6 +20,12 @@ class Mail extends StatefulWidget {
 class _MailState extends State<Mail> {
   User? user = FirebaseAuth.instance.currentUser;
   UserModel loggedInUser = UserModel();
+
+  final SATimages = [
+    'assets/images/pts.jpg',
+    'assets/images/jpas.png',
+    'assets/images/mara.jpg',
+  ];
 
   @override
   void initState() {
@@ -42,10 +49,32 @@ class _MailState extends State<Mail> {
         children: <Widget>[
           SafeArea(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  Container(
+                    height: MediaQuery.of(context).size.height * 0.3,
+                    child: Padding(
+                      padding: EdgeInsets.only(top: 10),
+                      child: CarouselSlider.builder(
+                        itemCount: SATimages.length,
+                        itemBuilder: (context, index, realIndex) {
+                          final SATimage = SATimages[index];
+                          return buildImage(SATimage, index);
+                        },
+                        options: CarouselOptions(
+                          height: MediaQuery.of(context).size.height * 0.3,
+                          //height: 300,
+                          //viewportFraction: 1,
+                          autoPlay: true,
+                          enlargeCenterPage: true,
+                          //enlargeStrategy: CenterPageEnlargeStrategy.height,
+                          //autoPlayInterval: Duration(seconds: 3),
+                        ),
+                      ),
+                    ),
+                  ),
                   SizedBox(height: 10),
                   Expanded(
                     child: GridView.count(
@@ -118,4 +147,13 @@ class _MailState extends State<Mail> {
     Navigator.of(context)
         .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
   }
+
+  Widget buildImage(String SATimage, int index) => ClipRRect(
+        borderRadius: BorderRadius.circular(30.0),
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 1), //40  //1
+          color: Colors.grey,
+          child: Image.asset(SATimage, fit: BoxFit.cover),
+        ),
+      );
 }
