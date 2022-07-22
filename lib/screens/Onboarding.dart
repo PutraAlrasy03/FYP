@@ -142,8 +142,7 @@ class _OnBoardingState extends State<OnBoarding>
                   ButtonTheme(
                     height: 50,
                     minWidth: 150,
-                    child: OutlineButton(
-                      borderSide: BorderSide(color: Colors.white),
+                    child: RaisedButton(
                       textColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
