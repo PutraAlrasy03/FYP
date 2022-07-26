@@ -12,13 +12,13 @@ class Search extends StatefulWidget {
 class _SearchState extends State<Search> {
   final _questions = const [
     {
-      'questionText': 'Let Start The Questionnaire !',
+      'questionText': 'Let\'s start the questionnaire !',
       'answers': [
         {'text': 'OK', 'score': 0},
       ],
     },
     {
-      'questionText': 'After Secondary School i like to continue study To?',
+      'questionText': 'After secondary school I like study to?',
       'answers': [
         {'text': 'Pra-Diploma', 'score': 0},
         {'text': 'Diploma', 'score': 1000},
@@ -26,7 +26,7 @@ class _SearchState extends State<Search> {
     },
     {
       'questionText':
-          'Im motivated to study at University because I would like:',
+          'Im motivated to study at university because I would like:',
       'answers': [
         {
           'text':
@@ -75,7 +75,7 @@ class _SearchState extends State<Search> {
         },
         {'text': 'Comes up with the creative ideas.', 'score': 5},
         {'text': 'Collect the data and analysis', 'score': 15},
-        {'text': 'make report and finalize project', 'score': 20}
+        {'text': 'Make report and finalize project', 'score': 20}
       ],
     },
     {
