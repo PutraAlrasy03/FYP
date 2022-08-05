@@ -26,17 +26,17 @@ class _ResultState extends State<Result> with TickerProviderStateMixin {
           "\r\n" +
           'Diploma Kimia';
     } else if (widget.resultScore >= 1151) {
-      resultText = 'Diploma Pengajian Perbankan' +
-          "\r\n" +
-          'Diploma Analisis Pejabat' +
-          "\r\n" +
-          'Diploma Pengajian Perniagaan';
-    } else if (widget.resultScore >= 1101) {
       resultText = 'Diploma Sains Komputer' +
           "\r\n" +
           'Diploma Sains Aktuari' +
           "\r\n" +
           'Diploma Sains Matematik';
+    } else if (widget.resultScore >= 1101) {
+      resultText = 'Diploma Pengajian Perbankan' +
+          "\r\n" +
+          'Diploma Analisis Pejabat' +
+          "\r\n" +
+          'Diploma Pengajian Perniagaan';
     } else if (widget.resultScore >= 1051) {
       resultText = 'Diploma Pengajian Islam' +
           "\r\n" +
@@ -97,7 +97,7 @@ class _ResultState extends State<Result> with TickerProviderStateMixin {
               SizedBox(height: 25),
               FlatButton(
                 onPressed: widget.resetHandler,
-                child: Text('Lets start again, shall we?',
+                child: Text('Let\'s start again, shall we?',
                     style:
                         TextStyle(fontSize: 15, fontStyle: FontStyle.italic)),
                 textColor: Color.fromARGB(255, 241, 69, 126),

@@ -25,6 +25,10 @@ class _MailState extends State<Mail> {
     'assets/images/pts.jpg',
     'assets/images/jpas.png',
     'assets/images/mara.jpg',
+    'assets/images/pt2.png',
+    'assets/images/ua.jpg',
+    'assets/images/is.jpg',
+    'assets/images/phg.jpg',
   ];
 
   @override

@@ -16,6 +16,7 @@ class Answer extends StatelessWidget {
         color: Color.fromARGB(255, 241, 69, 126),
         textColor: Colors.white,
         child: Text(answerText,
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 15,
             )),
